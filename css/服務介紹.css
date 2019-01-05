@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    /* height: 2000px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Microsoft JhengHei",sans-serif;
+  }
+ 
+  /* ul, li {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+   */
+
+  
+  header {
+    position: fixed;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #91AD70;
+    transition: 0.7s all;
+    z-index: 100;
+  }
+
+  
+  body.header-fixed header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: auto;
+    padding-top: 25px;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  nav {
+    overflow: hidden;
+  }
+  
+  nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav a {
+    display: inline-block;
+    color: #fff;
+    font-family: Microsoft JhengHei;
+    text-decoration: none;
+    margin: auto;
+    padding: 25px;
+    transition: 0.3s all;
+  }
+  
+  nav a:hover {
+    background: #516E41;
+    color: #fff;
+    font-family: Microsoft JhengHei;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    /* padding-top:0; */
+    /* padding-bottom: 10px; */
+    transition: 0.7s all;
+  }
+  body.header-fixed .logo img {
+    /* padding-top: 10px; */
+    width: 50px;
+    height: 50px;
+    /* margin: auto; */
+    
+  }
+  .inner {
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+  }
+ .img-fluid{
+   padding-top:200px;
+ }
+ .content{
+   padding-top:20px;
+ }
+     footer{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+    color: #ffffff;
+    padding:0px;
+    margin:0px;
+    background-color: #91AD70;
+    align-items: flex-end;
+    flex: 0 0 auto; 
+   } 
+
+  .box p{
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-family: Microsoft JhengHei;
+  } 
+  .icon{ 
+    position: absolute; 
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: -60px;
+    margin-right: 10px; 
+    padding-top: 30px; 
+  } 
